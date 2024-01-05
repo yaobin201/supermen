@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-menu-item:hover {
+  color: var(--dull) !important;
+}
+
+.main-layout {
+  background: transparent;
+}
+
+.normal-section {
+  height: calc(100vh - 64px);
+  position: relative;
+  overflow: hidden;
+}
+
+.m-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:has(.justify-self-start) {
+    justify-content: flex-start;
+  }
+}
+
+.container-68{
+  width: 68%;
+  height: 100%;
+  margin:0 auto;
+  position: relative;
+}

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bingo-icon-professions {
+    @apply h-12 w-12 bg-[url(/src/assets/professions.svg)] bg-contain bg-no-repeat;
+  }
+  .bingo-icon-inquiry {
+    @apply h-12 w-12 bg-[url(/src/assets/inquiry.svg)] bg-contain bg-no-repeat;
+  }
+  .bingo-icon-efficiently {
+    @apply h-12 w-12 bg-[url(/src/assets/efficiently.svg)] bg-contain bg-no-repeat;
+  }
+  .bingo-icon-service {
+    @apply h-12 w-12 bg-[url(/src/assets/service.svg)] bg-contain bg-no-repeat;
+  }
+}

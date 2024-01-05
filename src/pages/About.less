@@ -1,0 +1,50 @@
+.abount-layout{
+  position: relative;
+  width:100%;
+  background-image: radial-gradient(circle at 70% center, var(--primary-clear), var(--bg));
+  background-size: 100% 100%;
+}
+.about-content {
+  width: 68%;
+  margin: 0 auto;
+  padding: 3em 0 10em;
+
+  dt {
+    color: var(--clear);
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--duller);
+    line-height: 1em;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    span{
+      margin-left:.5rem;
+    }
+  }
+
+  dd {
+    margin: 0;
+
+    &.last {
+      margin-top: 1em;
+    }
+  }
+}
+
+.line-ani {
+  background: linear-gradient(to right, var(--duller), var(--accent-dull));
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 0px 1px;
+  transition: background-size 1s;
+  line-height: 2em;
+  padding: 0 0 5px 0;
+
+  &:hover {
+    background-position: left bottom;
+    background-size: 100% 1px;
+  }
+
+}
