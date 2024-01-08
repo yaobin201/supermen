@@ -61,7 +61,6 @@ export default function GlobalHeader() {
   }
 
   function contactUsClick(drawer) {
-    console.log(drawer, '..d')
     if (drawer === 'contact') {
       dispatch(switchShowContact(true))
     } else {
