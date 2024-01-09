@@ -33,7 +33,7 @@ export default function WebsiteBuilder() {
       <div className="path"></div>
     </div>
 
-    <div className='container-68'>
+    <div className='res-container'>
       <div className="website-content">
         <div className='website-body'>
           <div className="body-context">

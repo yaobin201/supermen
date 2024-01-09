@@ -10,9 +10,7 @@
   }
 
   .website-body {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: row;
+    @apply flex-auto flex flex-row flex-wrap md:flex-nowrap;
 
     .body-context {
       flex: 1 1 auto;
@@ -27,7 +25,7 @@
         line-height: 2;
         letter-spacing: 2px;
         &.font-3em{
-          font-size:3rem;
+          @apply text-3xl md:text-4xl;
         }
       }
 
@@ -43,10 +41,9 @@
 
     .body-icon {
       display: flex;
-      width: 44%;
-      height: 100%;
       align-items: center;
       justify-content: center;
+      @apply mx-auto w-10/12 md:w-7/12 h-auto md:h-full;
 
       img {
         width: 100%;

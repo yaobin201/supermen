@@ -29,13 +29,13 @@ export default function Home() {
   return (
     <div>
       <section className="normal-section home-welcome">
-        <div className='welcome-theme'><span>&lt;</span>宾果同路 风雨无阻<span>/&gt;</span></div>
-        <div className="welcome-desc">我们期待您的来信，竭诚与您合作</div>
+        <div className='welcome-theme text-3xl md:text-5xl'><span>&lt;</span>宾果同路 风雨无阻<span>/&gt;</span></div>
+        <div className="mt-4 welcome-desc">我们期待您的来信，竭诚与您合作</div>
         <div className="welcome-bizs">
           {
             bizLists.map((item, index) => {
               return (
-                <div className="biz-item" key={index} onClick={() => bizItemClick(item)}>
+                <div className="py-3 px-4 md:px-8 biz-item" key={index} onClick={() => bizItemClick(item)}>
                   <div className="biz-item-title">{item.title}</div>
                 </div>
               )
@@ -45,14 +45,14 @@ export default function Home() {
         <div className="welcome-empty"></div>
       </section>
       <section className="normal-section home-professional">
-        <div className="container">
-          <div className="prof-header">
-            <div className="prof-item">
+        <div className="res-container">
+          <div className="pt-12 md:pt-24 text-2xl md:text-4xl prof-header">
+            <div className="items-start md:items-center prof-item">
               <p className="pra">选择宾果 <span>==</span> 专业值得信赖</p>
-              <p className="pra">Choose US <span>==</span> Professional <span>&&</span> Trustworthy</p>
+              <p className="pra mt-4">Choose US <span>==</span> Professional <span>&&</span> Trustworthy</p>
             </div>
           </div>
-          <div className="prof-content">
+          <div className="prof-content gap-2 md:gap-12">
             <div className="con-item">
               <div className="con-item-num">01</div>
               <div className="con-item-title">最强技术团队</div>
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
       </section>
       <section className="normal-section home-worker">
-        <div className="container">
+        <div className="res-container">
           <div className="woker-header">
             <div className="worker-title">让我们高效开始</div>
             <div className="worker-sup">软件开发全生命周期管理，保障项目如期、有效交付</div>
