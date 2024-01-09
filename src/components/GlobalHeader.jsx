@@ -5,7 +5,7 @@ import { Layout, Affix, Drawer } from 'antd'
 import { useSelector, useDispatch } from 'react-redux';
 import { switchShowContact, switchGlobalDrawer } from '@/store/globalSlice';
 import logoImage from '@/assets/logo.png'
-import { TeamOutlined, WhatsAppOutlined, WechatOutlined, QqOutlined, MenuOutlined } from '@ant-design/icons'
+import { TeamOutlined, CloseOutlined, WhatsAppOutlined, WechatOutlined, QqOutlined, MenuOutlined } from '@ant-design/icons'
 import ewm1Image from '@/assets/ewm1.jpg'
 const { Header } = Layout;
 const headerNav = [
@@ -107,6 +107,14 @@ export default function GlobalHeader() {
     </div>
   }
 
+  function renderHeaderDrawer(text) {
+    return (
+      <div className="flex justify-between drawer-header">
+        <span className='flex-auto'>{ text }</span> <span className='flex-initial cursor-pointer' onClick={onClose}><CloseOutlined /></span>
+      </div>
+    )
+  }
+
   return (
     <Affix>
       <Header className='flex px-4 lg:px-8 items-center global-header'>
@@ -128,7 +136,7 @@ export default function GlobalHeader() {
         </div>
         <Drawer
           className='contact-us-drawer'
-          title={globalDrawer == 'contact' ? '联系我们' : '导航'}
+          title={renderHeaderDrawer(globalDrawer == 'contact' ? '联系我们' : '导航')}
           placement={placement}
           closable={false}
           onClose={onClose}
