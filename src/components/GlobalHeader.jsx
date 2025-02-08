@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { switchShowContact, switchGlobalDrawer } from '@/store/globalSlice';
 import logoImage from '@/assets/logo.png'
 import { TeamOutlined, CloseOutlined, WhatsAppOutlined, WechatOutlined, QqOutlined, MenuOutlined } from '@ant-design/icons'
-import ewm1Image from '@/assets/ewm1.jpg'
+import ewm1Image from '@/assets/qcode.png'
 const { Header } = Layout;
 const headerNav = [
   {
@@ -83,17 +83,16 @@ export default function GlobalHeader() {
         <p>我们是专业网站建设公司可以为您提供差异化网站建设等一站式服务。让客户的品牌得到升级营销得到更多的转化。</p>
         <dl>
           <dt>致电给我们</dt>
-          <dd><span className='icon'><WhatsAppOutlined /></span><span className='num'>188****8888</span></dd>
-          <dd><span className='icon'><WhatsAppOutlined /></span><span className='num'>166****6666</span></dd>
+          <dd><span className='icon'><WhatsAppOutlined /></span><span className='num'>15814467050</span></dd>
+          <dd><span className='icon'><WhatsAppOutlined /></span><span className='num'>13751014847</span></dd>
           <dt>加个微信</dt>
-          <dd><span className='icon'><WechatOutlined /></span><span className='num'>WX1234567889</span></dd>
-          <dd><span className='icon'><WechatOutlined /></span><span className='num'>WX1234567889</span></dd>
+          <dd><span className='icon'><WechatOutlined /></span><span className='num'>pengchen_2018</span></dd>
+            <dd><span className='icon'><WechatOutlined /></span><span className='num'>xiaozhu13140825</span></dd>
+            <dd><span className='icon'><WechatOutlined /></span><span className='num'>yaobin201</span></dd>
           <dt>企鹅号</dt>
-          <dd><span className='icon'><QqOutlined /></span><span className='num'>QQ888888888</span></dd>
-          <dd><span className='icon'><QqOutlined /></span><span className='num'>QQ888888888</span></dd>
+          <dd><span className='icon'><QqOutlined /></span><span className='num'>1501209698@qq.com</span></dd>
           <dt>扫个码</dt>
           <dd>
-            <img src={ewm1Image} />
             <img src={ewm1Image} />
           </dd>
         </dl>
