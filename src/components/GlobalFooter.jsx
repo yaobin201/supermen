@@ -33,6 +33,7 @@ export default function GlobalFooter() {
         <div className=" w-11/12 md:w-9/12 mx-auto flex justify-between items-center mt-8 pt-8 ft-copyright">
           <div className="cp-content">
             <span className='idno'>&nbsp;</span> <span className='org-name'>宾果软件工作室</span>
+            <a className='org-name' href='https://faststart.smartmen.cn'>Fast Start</a>
           </div>
           <div className="flex items-center cp-mlogo">
             supermen.cn <img src={logoImage} className='w-8'/>
